@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Particify - Student Log In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <a href="home.html">
+            <h1>Particify</h1>
+        </a>
+    </div>
+    <!--DIV for whole sign in section-->
+    
+        <div class="center">
+            <p class="welcome"> Sign in as Student</p>
+                <form method="post">
+                    <!-- DIV for Username & Password Input-->
+                    <div class="text_field">
+                        <input type="text" name="username" id="user" autocomplete="off" required>
+                        <span></span>
+                        <label>Username</label>
+                    </div>
+                    <div class="text_field">
+                        <input type="password" name="pass" id="pass" required>
+                        <label>Password</label>
+                    </div>
+                    <!--Forgot Password-->
+                    <!--div class="pass">Forgot Password?</div-->
+                    <!-- Sign In Button -->
+                    <input type="submit" value="Sign in" id="submit" onclick="validateStudentLogin()"> 
+                    <!-- Sign Up Redirect -->
+                    <div class="signup_link"> Don't have an account? <a href="studentRegister.html">Sign Up</a>
+                    </div>
+                </form>
+            </div>
+   
+    
+        <script src="script.js"></script>
+   <!--
+    <h1 style = "text-align: center;">Welcome, Student</h1>
+    <form class="text-center"action="/url" method="GET">
+        <p>Username</p>
+        <input type="text">
+        <p>Password</p>
+        <input type="text">
+    </form><br><br>
+    <div class="text-center">
+        <button type="submit">Log in</button>
+      </div>
+    --> 
+</body>
+</html>

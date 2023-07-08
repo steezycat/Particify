@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Code to enter environment</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="http://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet">
+        
+    </head>
+    <body>
+        <div class="main">
+            
+            <a href="home.html">
+                <h1>Particify</h1>
+            </a>
+                <h2 id="username"></h2>   
+                <a href="home.html">
+                    <h2 id="logout">Logout</h2>
+                </a>
+        </div>
+      
+        <div class = "center code">
+            <h1 class="welcome">Enter Code</h1>
+            <form method = "post" id = "form_id" name ="myform">
+                <div class = "text_field">
+                <input type ="password" name = "code" id="code" required>
+                </div>
+                <input type ="submit" value = "START!" id="submit" onclick="validate()"/>
+                <div class="signup_link">
+                </div>
+            </form>
+        </div>
+   
+        <script src="script.js"></script>
+    </body>
+</html>

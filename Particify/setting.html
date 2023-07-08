@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Settings</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <div class="main">
+            <h1 >Setting up session</h1>
+        </div>
+        <div class="center setting">
+            <h1 class="welcome"> Set up session</h1>
+                <form method="post">
+                <!-- DIV for Username & Password Input-->
+                    <div class="text_field">
+                        <input type="text" id="className"  required>
+                        <span></span>
+                        <label>Class Name</label>
+                    </div>
+                    <div class="text_field">
+                        <input type="text" id="codeSet" required>
+                        <span></span>
+                        <label>Code</label>
+                    </div>
+                    <div class="text_field">
+                        <input type="text" id="reward"  required>
+                        <span></span>
+                        <label>Reward</label>
+                    </div>      
+                    
+                    <input type="submit" value="Start session" id="startSesh" onclick="setting()">
+                                                                     
+                    <div class="signup_link"> 
+                    </div>
+                </form>
+            </div>        
+        <script src="script.js"></script>
+    </body>
+</html>

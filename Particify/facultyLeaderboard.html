@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <title>Particify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="leaderboard()" id="darktheme">
+    <div class="main">
+        <h1 id="lblClass">On Going Session</h1>
+        <h2> Professor</h2>
+        <a href="home.html">
+            <h2 id="logout">Logout</h2>
+        </a>
+    </div>
+<!--------------------------------------------------------------------------->
+   <div class="body dark">
+    <div class="center2 prof" id="btnProf">
+        <input type="submit" id="btnAskStudent" value="Ask a question to a student" onclick="btnAskStud()" /><br><br><br>
+        <input type="submit" name="btnAnswer" id="btnAnswer" value="Answer a question" onclick="btnAnswer()" disabled/><br><br><br>      
+    </div>
+<!--------------------------------------------------------------------------->
+    <div class = "center bulletin" id="bulletin">
+        <h1 class="welcome">Chosen Student for Recitation</h1>    
+            <h3 class="welcome chosen"id="chosenStudent"></h3>
+            <div class="signup_link">
+            </div>
+        <div>
+        <input type="submit" id="btnCorrect" value="Correct" onclick="btnCorrect()"/><br><br>
+        <input type="submit" id="btnWrong" value="Wrong" onclick="btnWrong()"/>
+        </div>
+    </div>
+<!--------------------------------------------------------------------------->
+    <div class = "center bulletin1" id="bulletin1">
+        <h1 class="welcome">Chosen Student for Takeaways</h1>    
+            <h3 class="welcome chosen" id="chosenStudent1"></h3>
+            <div class="signup_link">
+            </div> 
+        <div>
+        <input type="submit" id="btnFinished" value="Finished" onclick="btnFinished()"/>
+        </div>
+        <div class="signup_link">
+        </div>
+    </div>
+<!--------------------------------------------------------------------------->
+    <div class = "center bulletin2" id="bulletin2">
+            <h1 id="bye">Hope you learned a lot! ^_^</h1>
+            <div class="signup_link">
+            </div>
+    </div>
+<!--------------------------------------------------------------------------->
+    <div class="center2 end">
+        <input type="submit" id="btnEnd" value="End Discussion" onclick="btnEnd()" />
+    </div>
+    <div class="center3 leaderboard">
+        <table id="myTable">
+            <thead>
+                <tr id ="label">
+                    <td>Rank</td>
+                    <td>
+                        Player
+                    </td>
+                    <td>
+                        Score
+                    </td>        
+                </tr>
+            </thead>
+            <tbody>
+               <tr id="winner">
+                    <td >1</td>
+                    <td ><p ></p></td>
+                    <td></td>                   
+                </tr>               
+                <tr id="runner-up">
+                    <td >2</td>
+                    <td><p></p></td>
+                    <td></td>                    
+                </tr>               
+                <tr id="second-runner-up">
+                    <td>3</td>
+                    <td><p></p></td>
+                    <td></td>                 
+                </tr>    
+            </tbody>
+        </table>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
